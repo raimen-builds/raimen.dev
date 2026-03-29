@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Raimen favicon</title>
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f36f45" />
+      <stop offset="100%" stop-color="#2d6c66" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#fff6ee" />
+  <path d="M18 46V18h16c8.2 0 13 4.7 13 11.6 0 5.8-3.5 9.8-8.9 11.1L49 46H37l-8.8-13.9H28V46H18Zm10-21.3h5.6c3.3 0 5.2 1.8 5.2 4.6s-1.9 4.5-5.2 4.5H28v-9.1Z" fill="url(#g)" />
+</svg>
