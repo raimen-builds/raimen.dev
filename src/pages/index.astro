@@ -12,7 +12,6 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
       </a>
       <nav aria-label="Section navigation">
         <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
         <a href="#socials">Socials</a>
       </nav>
@@ -38,7 +37,7 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
         </div>
 
         <aside class="hero-card panel reveal is-visible" style="--delay: 0.12s">
-          <p class="hero-card-label">Launch snapshot</p>
+          <p class="hero-card-label">At a glance</p>
           <div class="hero-orbit" aria-hidden="true">
             <span></span>
             <span></span>
@@ -66,10 +65,9 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow">About</span>
-          <h2>Presence, perspective, and a place to point people.</h2>
+          <h2>A digital home base with clarity, taste, and momentum.</h2>
           <p>
-            A personal site should do more than list links. This one is designed to feel like a
-            confident introduction to Raimen's work and creative point of view.
+            The goal is simple: make it immediately clear who Raimen is, how he works, and where to go next.
           </p>
         </div>
 
@@ -85,57 +83,6 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
               {about.highlights.map((item) => <li>{item}</li>)}
             </ul>
           </aside>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="content-section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Portfolio</span>
-          <h2>Selected work across web, systems, and interactive builds.</h2>
-          <p>
-            A mix of live work and representative project categories, with room for deeper case studies and breakdowns over time.
-          </p>
-        </div>
-
-        <div class="portfolio-grid">
-          {portfolio.map((project, index) => (
-            <article
-              class:list={[
-                'panel',
-                'project-card',
-                project.featured ? 'is-featured' : undefined,
-                'reveal',
-              ]}
-              style={`--delay: ${index * 0.12}s`}
-            >
-              <div class="project-meta">
-                <span>{project.role}</span>
-                <span>{project.year}</span>
-              </div>
-              <h3>{project.title}</h3>
-              <p>{project.summary}</p>
-              <ul class="tag-list" aria-label={`${project.title} tags`}>
-                {project.tags.map((tag) => <li>{tag}</li>)}
-              </ul>
-              <div class="project-links">
-                {project.links.map((link) =>
-                  link.href ? (
-                    <a
-                      href={link.href}
-                      target={link.href.startsWith('http') ? '_blank' : undefined}
-                      rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
-                    >
-                      {link.label}
-                    </a>
-                  ) : (
-                    <span class="placeholder-link">{link.label}</span>
-                  ),
-                )}
-              </div>
-            </article>
-          ))}
         </div>
       </div>
     </section>
@@ -160,9 +107,9 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow">Socials</span>
-          <h2>A few useful ways to find Raimen online.</h2>
+          <h2>Where the work actually lives day to day.</h2>
           <p>
-            The goal is simple: make it easy to see the work, follow the projects, and start a conversation.
+            Social platforms and public channels are the living archive. This site stays focused, while everything active and evolving points outward from here.
           </p>
         </div>
 
@@ -190,7 +137,7 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
 
   <footer class="site-footer">
     <div class="container footer-shell">
-      <p>Raimen.dev is built with Astro for fast, elegant static delivery.</p>
+      <p>Raimen.dev is built to stay fast, clear, and easy to evolve.</p>
       <a href={`mailto:${contact.email}`}>Email Raimen</a>
     </div>
   </footer>
@@ -273,17 +220,17 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .page-shell {
-    padding: 1.5rem 0 5rem;
+    padding: 1.25rem 0 5.5rem;
   }
 
   .hero {
-    padding: 2.5rem 0 1.75rem;
+    padding: 3.1rem 0 2.25rem;
   }
 
   .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.9fr);
-    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.85fr);
+    gap: 1.7rem;
     align-items: stretch;
   }
 
@@ -300,8 +247,8 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   .hero-copy {
     display: grid;
     align-content: center;
-    gap: 1.2rem;
-    min-height: 560px;
+    gap: 1.25rem;
+    min-height: 600px;
   }
 
   .hero-copy h1 {
@@ -313,7 +260,7 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .hero-copy p {
-    max-width: 58ch;
+    max-width: 60ch;
     font-size: 1.08rem;
     color: var(--surface-muted);
   }
@@ -369,8 +316,8 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .availability {
-    font-size: 0.95rem;
-    color: var(--accent-deep);
+    font-size: 0.97rem;
+    color: var(--highlight);
   }
 
   .hero-card {
@@ -378,7 +325,7 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
     display: grid;
     gap: 1.4rem;
     overflow: hidden;
-    min-height: 560px;
+    min-height: 600px;
     background:
       linear-gradient(160deg, rgba(18, 24, 34, 0.98), rgba(22, 29, 41, 0.88)),
       var(--surface);
@@ -485,7 +432,7 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .content-section {
-    padding: 1.75rem 0;
+    padding: 2.4rem 0;
   }
 
   .about-grid {
@@ -540,7 +487,7 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   .social-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 1.1rem;
   }
 
   .project-card {
@@ -578,7 +525,8 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   .social-card {
     display: grid;
     gap: 1rem;
-    grid-column: span 3;
+    grid-column: span 6;
+    min-height: 220px;
   }
 
   .site-footer {
@@ -639,11 +587,11 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
     }
 
     .page-shell {
-      padding-top: 0.8rem;
+      padding-top: 0.7rem;
     }
 
     .hero {
-      padding-top: 1rem;
+      padding-top: 0.85rem;
     }
 
     .hero-copy,
@@ -657,7 +605,7 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
     }
 
     .hero-copy h1 {
-      font-size: clamp(2.8rem, 16vw, 4.6rem);
+      font-size: clamp(3rem, 16vw, 4.9rem);
     }
 
     .hero-card-grid,
@@ -674,6 +622,10 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
 
     .hero-card-grid article {
       min-height: 110px;
+    }
+
+    .social-card {
+      min-height: auto;
     }
 
     .footer-shell {

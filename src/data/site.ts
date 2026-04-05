@@ -32,12 +32,12 @@ export const site = {
   heroText:
     'Design, development, and systems thinking brought together to create work that feels clear, distinctive, and built with intent — from brand-forward websites to custom digital experiences.',
   heroPrimaryCta: {
-    label: 'View selected work',
-    href: '#portfolio',
+    label: 'Get in touch',
+    href: '#contact',
   },
   heroSecondaryCta: {
-    label: 'Start a conversation',
-    href: '#contact',
+    label: 'Find Raimen online',
+    href: '#socials',
   },
   availability: 'Available for select collaborations, freelance work, and creative technical partnerships.',
   seoKeywords: ['Raimen', 'creative developer', 'systems builder', 'interactive design', 'automation', 'portfolio'],
@@ -55,9 +55,9 @@ This site is a home base for that work — a place to show range, establish tast
     'Creative tooling and digital experiences built to scale',
   ],
   stats: [
-    { value: 'Brand', label: 'Visual voice + presence' },
+    { value: 'Brand', label: 'Identity + presence' },
     { value: 'Build', label: 'Design + development' },
-    { value: 'Systems', label: 'Structure + execution' },
+    { value: 'Digital', label: 'Experiences + systems' },
   ],
 };
 
