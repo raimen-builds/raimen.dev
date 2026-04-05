@@ -105,22 +105,22 @@ export const socialLinks: SocialLink[] = [
     note: 'Code, experiments, tooling, and active build work.',
   },
   {
+    label: 'YouTube',
+    handle: 'RaimenBuilds',
+    href: 'https://youtube.com/@RaimenBuilds',
+    note: 'Builds, experiments, and the public-facing archive as it evolves.',
+  },
+  {
     label: 'Website',
     handle: 'raimen.dev',
     href: 'https://raimen.dev',
-    note: 'Home base for portfolio, positioning, and future case studies.',
+    note: 'Home base for positioning, contact, and public-facing identity.',
   },
   {
     label: 'Email',
     handle: 'hello@raimen.dev',
     href: 'mailto:hello@raimen.dev',
-    note: 'Best route for collaborations, consulting, and project inquiries.',
-  },
-  {
-    label: 'Contact',
-    handle: 'Collaborations and inquiries',
-    href: 'mailto:hello@raimen.dev',
-    note: 'Best for serious project inquiries, freelance work, and creative partnerships.',
+    note: 'Best route for collaborations, consulting, and serious project inquiries.',
   },
 ];
 
