@@ -24,105 +24,112 @@ export const site = {
   name: 'Raimen',
   domain: 'raimen.dev',
   url: 'https://raimen.dev',
-  title: 'Raimen | Creative Developer & Digital Builder',
+  title: 'Raimen | Creative Developer & Systems Builder',
   description:
-    'A bold single-page portfolio for Raimen featuring an about section, selected work, contact details, and social presence.',
-  eyebrow: 'Creative developer, visual builder, and internet-native storyteller',
-  heroTitle: 'Raimen builds digital experiences with personality.',
+    'Creative developer, systems builder, and internet-native experimenter working across web, hardware, automation, and interactive experiences.',
+  eyebrow: 'Creative developer, systems builder, and internet-native experimenter',
+  heroTitle: 'Raimen builds interactive systems with personality.',
   heroText:
-    'This launch version of raimen.dev is designed to feel confident, modern, and unmistakably yours while leaving clean room for future projects, case studies, and writing.',
+    'From polished web experiences to hardware-driven chaos, Raimen blends design, development, automation, and live interactivity into projects that feel sharp, alive, and unmistakably custom.',
   heroPrimaryCta: {
     label: 'View selected work',
     href: '#portfolio',
   },
   heroSecondaryCta: {
-    label: 'Get in touch',
+    label: 'Start a conversation',
     href: '#contact',
   },
-  availability: 'Available for collaborations, creative partnerships, and freelance opportunities.',
-  seoKeywords: ['Raimen', 'portfolio', 'creative developer', 'designer', 'web developer'],
+  availability: 'Open to collaborations, consulting, creative builds, and ambitious technical experiments.',
+  seoKeywords: ['Raimen', 'creative developer', 'systems builder', 'interactive design', 'automation', 'portfolio'],
 };
 
 export const about = {
   intro:
-    'Raimen is a multidisciplinary creator working across design, development, and online identity. The goal of this site is simple: present the work with clarity while keeping the energy and point of view front and center.',
-  body: `This first version is intentionally built as a strong launchpad. It introduces who Raimen is, highlights featured work, and creates a home base for future case studies, experiments, and brand storytelling.
+    'Raimen works at the intersection of software, hardware, design, and live interaction. The through-line is simple: build things that feel intentional, expressive, and technically solid.',
+  body: `A lot of the work lives between categories. Some projects are web-first. Some are systems-first. Some are built for content, audience interaction, or physical devices. The common thread is a bias toward experiences that do something memorable instead of just looking respectable.
 
-The visual language leans editorial and high-contrast, with expressive typography, layered gradients, and card-based storytelling. As final brand copy and project assets come in, the structure is already ready for them.`,
+This site is a home base for that work: a place to point people, show range, and make future case studies, experiments, and collaborations easier to share.`,
   highlights: [
-    'Brand-led web experiences with a distinct visual voice',
-    'Portfolio storytelling that can grow into deeper case studies',
-    'Fast static-site architecture for simple hosting and maintenance',
+    'Interactive web experiences with strong visual direction',
+    'Automation and systems design for real-world workflows',
+    'Hardware, firmware, and device-integrated experiments',
   ],
   stats: [
-    { value: '01', label: 'Launch-ready home base' },
-    { value: '04', label: 'Core sections' },
-    { value: 'Infinite', label: 'Room to expand' },
+    { value: 'Web', label: 'Design + development' },
+    { value: 'Systems', label: 'Automation + tooling' },
+    { value: 'Physical', label: 'Devices + interaction' },
   ],
 };
 
 export const portfolio: PortfolioItem[] = [
   {
-    title: 'Raimen.dev Launch System',
-    role: 'Brand site concept and implementation',
+    title: 'raimen.dev',
+    role: 'Personal site design and implementation',
     year: '2026',
     summary:
-      'A fast, editorial one-page site built to establish a strong online presence and support future portfolio growth.',
-    tags: ['Astro', 'Design System', 'GitHub Pages'],
+      'A fast, editorial-style personal site designed to establish a stronger online presence and create a foundation for future case studies, writing, and project storytelling.',
+    tags: ['Astro', 'GitHub Pages', 'Brand Site'],
     featured: true,
     links: [
       { label: 'Live site', href: 'https://raimen.dev' },
-      { label: 'Case study slot' },
+      { label: 'Source', href: 'https://github.com/raimen-ttv/raimen.dev' },
     ],
   },
   {
-    title: 'Featured Project Placeholder',
-    role: 'Add project name and your contribution',
-    year: 'TBD',
+    title: 'Stream Havoc',
+    role: 'Interactive platform architecture, tooling, and documentation',
+    year: '2026',
     summary:
-      'Use this card for a signature project. The layout already supports a clean headline, a concise summary, and one or two outbound links.',
-    tags: ['Placeholder', 'Case Study Ready', 'Portfolio'],
+      'A multi-part interactive stack spanning dashboards, Twitch-facing surfaces, device gateways, firmware, and infrastructure for viewer-driven and operator-controlled experiences.',
+    tags: ['Interactive Systems', 'Twitch', 'Devices', 'Infrastructure'],
     featured: true,
-    links: [{ label: 'Project link' }, { label: 'Source or breakdown' }],
+    links: [
+      { label: 'GitHub org', href: 'https://github.com/StreamHavoc' },
+      { label: 'Docs', href: 'https://github.com/StreamHavoc/docs' },
+    ],
   },
   {
-    title: 'Creative Experiment Placeholder',
-    role: 'Motion, art direction, or interactive concept',
-    year: 'TBD',
+    title: 'Custom Automation + Build Work',
+    role: 'Systems, scripting, hardware integration, and live experiments',
+    year: 'Ongoing',
     summary:
-      'Reserve this space for something more playful or exploratory to show range beyond production work.',
-    tags: ['Concept', 'Visual Design', 'Interactive'],
+      'A running body of work across automation, firmware, content tooling, interactive builds, and practical experiments that connect software to real-world behavior.',
+    tags: ['Automation', 'Hardware', 'Creative Tech'],
     featured: false,
-    links: [{ label: 'Preview link' }],
+    links: [{ label: 'Get in touch', href: '#contact' }],
   },
 ];
 
 export const socialLinks: SocialLink[] = [
   {
     label: 'GitHub',
-    handle: '@your-handle',
-    note: 'Add your GitHub profile URL in src/data/site.ts',
+    handle: '@raimen-ttv',
+    href: 'https://github.com/raimen-ttv',
+    note: 'Code, experiments, tooling, and active build work.',
   },
   {
-    label: 'LinkedIn',
-    handle: 'Add your LinkedIn',
-    note: 'Swap in your public profile when ready.',
+    label: 'Website',
+    handle: 'raimen.dev',
+    href: 'https://raimen.dev',
+    note: 'Home base for portfolio, positioning, and future case studies.',
   },
   {
-    label: 'Instagram',
-    handle: '@your-handle',
-    note: 'Great for brand, creative, or behind-the-scenes work.',
+    label: 'Email',
+    handle: 'hello@raimen.dev',
+    href: 'mailto:hello@raimen.dev',
+    note: 'Best route for collaborations, consulting, and project inquiries.',
   },
   {
-    label: 'X',
-    handle: '@your-handle',
-    note: 'Optional slot for announcements, process, or conversation.',
+    label: 'Stream Havoc',
+    handle: 'github.com/StreamHavoc',
+    href: 'https://github.com/StreamHavoc',
+    note: 'Current stack work spanning docs, services, devices, and infra.',
   },
 ];
 
 export const contact = {
   email: 'hello@raimen.dev',
-  heading: "Let's build something memorable.",
+  heading: "Let's build something sharp.",
   body:
-    'For collaborations, commissions, or creative conversations, email is the clearest way in right now. Social profile URLs can be dropped into the data file as soon as they are finalized.',
+    'If you need someone who can think across design, development, systems, automation, and weird technical edge cases without losing the thread, send a note.',
 };
