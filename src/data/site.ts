@@ -1,81 +1,68 @@
 export type SocialLink = {
   label: string;
-  handle: string;
+  icon: string;
   href?: string;
-  note: string;
 };
 
 export const site = {
   name: 'Raimen',
   domain: 'raimen.dev',
   url: 'https://raimen.dev',
-  title: 'Raimen | Creative Developer & Systems Builder',
+  title: 'Raimen | Builder of Systems, Tools, and Weird Things',
   description:
-    'Raimen is a DevOps engineer, builder, and creative technologist working across software, hardware, automation, and interactive systems.',
-  eyebrow: 'DevOps engineer, builder, and creative technologist',
-  heroTitle: 'Raimen builds software, systems, and interactive experiments.',
+    'Raimen builds systems, tools, printed parts, and interactive projects with a practical streak and a taste for the unusual.',
+  eyebrow: 'Systems, tools, prints, and experiments',
+  heroTitle: 'Raimen Builds.',
   heroText:
-    'Software, hardware, automation, and live interaction — built by someone who likes making things that are useful, weird, and memorable.',
-  heroPrimaryCta: {
-    label: 'Get in touch',
-    href: '#contact',
-  },
-  heroSecondaryCta: {
-    label: 'Find Raimen online',
-    href: '#socials',
-  },
-  availability: 'Currently building, experimenting, and documenting the work in public.',
-  seoKeywords: ['Raimen', 'creative developer', 'systems builder', 'interactive design', 'automation'],
+    'Systems, tools, printed parts, and interactive projects that are practical, strange, and worth making real.',
+  seoKeywords: ['Raimen', 'systems builder', '3D printing', 'automation', 'interactive projects'],
 };
 
 export const about = {
-  intro:
-    'Raimen is a hands-on builder with a DevOps background who works across software, hardware, automation, and interactive systems.',
-  body: `A lot of the work starts with a practical problem and turns into a build: a tool, a workflow, a device, an interactive system, or a piece of content infrastructure.
+  body: `Raimen works at the intersection of systems, fabrication, and experimentation, with a knack for turning ideas into functional prototypes.
 
-Raimen likes making things that work in the real world and still feel inventive, personal, and fun to interact with.`,
-  highlights: [
-    'Software, automation, and infrastructure',
-    'Hardware builds and interactive systems',
-    'Content tooling, experiments, and practical execution',
-  ],
-  stats: [
-    { value: 'Code', label: 'Software + systems' },
-    { value: 'Build', label: 'Hardware + automation' },
-    { value: 'Public', label: 'Experiments + content' },
-  ],
+On Twitch, Raimen streams funducational content in the realm of microelectronics, DIY, and stream automation. He is working on a line of viewer-activated desktop gadgets for live streamers under the brand name <a href="https://streamhavoc.com" target="_blank" rel="noreferrer">Stream Havoc</a>.
+
+3D printing is a core part of that process, not as decoration, but as a fast way to prototype, refine, and iterate in the physical world.
+
+Some of it ends up as infrastructure, some of it becomes content, and some of it turns into strange little machines.`,
 };
 
 export const socialLinks: SocialLink[] = [
   {
     label: 'GitHub',
-    handle: '@raimen-builds',
+    icon: 'github',
     href: 'https://github.com/raimen-builds',
-    note: 'Code, experiments, tooling, and active build work.',
   },
   {
     label: 'YouTube',
-    handle: 'RaimenBuilds',
+    icon: 'youtube',
     href: 'https://youtube.com/@RaimenBuilds',
-    note: 'Builds, experiments, and the public-facing archive as it evolves.',
   },
   {
-    label: 'Website',
-    handle: 'raimen.dev',
-    href: 'https://raimen.dev',
-    note: 'Home base for positioning, contact, and public-facing identity.',
+    label: 'Instagram',
+    icon: 'instagram',
+    href: 'https://instagram.com/RaimenBuilds',
+  },
+  {
+    label: 'Discord',
+    icon: 'discord',
+    href: 'https://discord.gg/ybwmg9HBqv',
+  },
+  {
+    label: 'LinkedIn',
+    icon: 'linkedin',
+    href: 'https://linkedin.com/in/loganmcghee',
+  },
+  {
+    label: 'Twitch',
+    icon: 'twitch',
+    href: 'https://twitch.tv/raimen',
   },
   {
     label: 'Email',
-    handle: 'hello@raimen.dev',
+    icon: 'email',
     href: 'mailto:hello@raimen.dev',
-    note: 'Best route for collaborations, consulting, and serious project inquiries.',
   },
 ];
 
-export const contact = {
-  email: 'hello@raimen.dev',
-  heading: "Want to reach Raimen?",
-  body:
-    'Email is the simplest way in for collaborations, questions, or interesting opportunities.',
-};
