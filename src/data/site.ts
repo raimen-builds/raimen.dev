@@ -26,11 +26,11 @@ export const site = {
   url: 'https://raimen.dev',
   title: 'Raimen | Creative Developer & Systems Builder',
   description:
-    'Creative developer, systems builder, and internet-native experimenter working across web, hardware, automation, and interactive experiences.',
-  eyebrow: 'Creative developer, systems builder, and internet-native experimenter',
-  heroTitle: 'Raimen builds sharp, memorable digital experiences.',
+    'Raimen is a DevOps engineer, builder, and creative technologist working across software, hardware, automation, and interactive systems.',
+  eyebrow: 'DevOps engineer, builder, and creative technologist',
+  heroTitle: 'Raimen builds software, systems, and interactive experiments.',
   heroText:
-    'Design, development, and systems thinking brought together to create work that feels clear, distinctive, and built with intent — from brand-forward websites to custom digital experiences.',
+    'Software, hardware, automation, and live interaction — brought together by someone who likes building things that are useful, weird, and memorable.',
   heroPrimaryCta: {
     label: 'Get in touch',
     href: '#contact',
@@ -39,25 +39,25 @@ export const site = {
     label: 'Find Raimen online',
     href: '#socials',
   },
-  availability: 'Available for select collaborations, freelance work, and creative technical partnerships.',
+  availability: 'Currently building, experimenting, and documenting the work in public.',
   seoKeywords: ['Raimen', 'creative developer', 'systems builder', 'interactive design', 'automation', 'portfolio'],
 };
 
 export const about = {
   intro:
-    'Raimen works across design, development, systems thinking, and online identity. The through-line is simple: make things that feel intentional, expressive, and technically sharp.',
-  body: `The work spans brand sites, interactive experiences, creative tooling, and systems that support real-world execution. Some projects are client-facing. Some are internal. Some are experiments that become something bigger later.
+    'Raimen is a hands-on builder with a DevOps background who works across software, hardware, automation, and interactive systems.',
+  body: `A lot of the work starts with a practical problem and turns into a build: a tool, a workflow, a device, an interactive system, or a piece of content infrastructure.
 
-This site is a home base for that work — a place to show range, establish taste, and make future case studies and collaborations easier to explore.`,
+This site is intentionally simple. It's a place to point people, share the basics, and make it easy to find the channels where the work is actually happening.`,
   highlights: [
-    'Brand-led websites with a strong visual point of view',
-    'Design and development working as one system',
-    'Creative tooling and digital experiences built to scale',
+    'Software, automation, and infrastructure',
+    'Hardware builds and interactive systems',
+    'Content tooling, experiments, and practical execution',
   ],
   stats: [
-    { value: 'Brand', label: 'Identity + presence' },
-    { value: 'Build', label: 'Design + development' },
-    { value: 'Digital', label: 'Experiences + systems' },
+    { value: 'Code', label: 'Software + systems' },
+    { value: 'Build', label: 'Hardware + automation' },
+    { value: 'Public', label: 'Experiments + content' },
   ],
 };
 
@@ -126,7 +126,7 @@ export const socialLinks: SocialLink[] = [
 
 export const contact = {
   email: 'hello@raimen.dev',
-  heading: "Let's make something memorable.",
+  heading: "Want to reach Raimen?",
   body:
-    'If you need someone who can think clearly about design, development, structure, and execution without flattening the creative edge, send a note.',
+    'Email is the simplest way in for collaborations, questions, or interesting opportunities.',
 };
