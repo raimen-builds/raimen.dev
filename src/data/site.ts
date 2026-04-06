@@ -21,7 +21,7 @@ export const site = {
 export const about = {
   body: `Raimen works at the intersection of systems, fabrication, and experimentation, with a knack for turning ideas into functional prototypes.
 
-On Twitch, Raimen streams funducational content in the realm of microelectronics, DIY, and stream automation. He is working on a line of viewer-activated desktop gadgets for live streamers under the brand name <a href="https://streamhavoc.com" target="_blank" rel="noreferrer">Stream Havoc</a>.
+On Twitch, Raimen streams funducational content in the realm of microelectronics, DIY, and stream automation. He is working on a line of viewer-activated desktop gadgets for live streamers under the brand name <a href="https://streamhavoc.com" target="_blank" rel="noreferrer">Stream Havoc</a>. His favorite type of mod is adding microcontrollers to off-the-shelf toys that probably should not have wifi capabilities.
 
 3D printing is a core part of that process, not as decoration, but as a fast way to prototype, refine, and iterate in the physical world.
 
