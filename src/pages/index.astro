@@ -8,7 +8,10 @@ import { about, site, socialLinks } from '../data/site';
     <div class="container nav-shell">
       <a class="brand" href="#top" aria-label="Raimen home">
         <img class="brand-mark" src="/images/raimen-profile.png" alt="" aria-hidden="true" />
-        <span>{site.domain}</span>
+        <span class="brand-copy">
+          <span class="brand-domain">{site.domain}</span>
+          <span class="brand-motto">Learn. Explore. Create.</span>
+        </span>
       </a>
       <nav aria-label="Section navigation">
         <a href="#about">About</a>
@@ -158,6 +161,25 @@ import { about, site, socialLinks } from '../data/site';
     text-decoration: none;
     letter-spacing: 0.01em;
     font-family: 'Magistral', 'Space Grotesk', sans-serif;
+  }
+
+  .brand-copy {
+    display: grid;
+    gap: 0.05rem;
+  }
+
+  .brand-domain {
+    line-height: 1;
+  }
+
+  .brand-motto {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--surface-muted);
+    line-height: 1.1;
   }
 
   .brand-mark {
