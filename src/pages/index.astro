@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { about, contact, portfolio, site, socialLinks } from '../data/site';
+import { about, contact, site, socialLinks } from '../data/site';
 ---
 
 <Layout title={site.title} description={site.description} url={site.url}>
@@ -36,28 +36,6 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
           <p class="availability">{site.availability}</p>
         </div>
 
-        <aside class="hero-card panel reveal is-visible" style="--delay: 0.12s">
-          <p class="hero-card-label">At a glance</p>
-          <div class="hero-orbit" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="hero-card-grid">
-            {about.stats.map((stat) => (
-              <article>
-                <strong>{stat.value}</strong>
-                <span>{stat.label}</span>
-              </article>
-            ))}
-          </div>
-          <div class="hero-card-note">
-            <h2>Built to grow with the work</h2>
-            <p>
-              The foundation is here for deeper case studies, sharper project breakdowns, and a stronger public-facing body of work as the portfolio expands.
-            </p>
-          </div>
-        </aside>
       </div>
     </section>
 
@@ -235,10 +213,8 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .hero-copy,
-  .hero-card,
   .about-copy,
   .about-highlights,
-  .project-card,
   .contact-grid,
   .social-card {
     padding: 1.6rem;
@@ -266,7 +242,6 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .hero-actions,
-  .project-links,
   .footer-shell {
     display: flex;
     flex-wrap: wrap;
@@ -275,7 +250,6 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .button,
-  .project-links a,
   .social-card a,
   .footer-shell a {
     display: inline-flex;
@@ -295,7 +269,6 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .button:hover,
-  .project-links a:hover,
   .social-card a:hover,
   .footer-shell a:hover {
     transform: translateY(-1px);
@@ -308,7 +281,6 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .button-secondary,
-  .project-links a,
   .social-card a,
   .footer-shell a {
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -320,101 +292,19 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
     color: var(--highlight);
   }
 
-  .hero-card {
-    position: relative;
-    display: grid;
-    gap: 1.4rem;
-    overflow: hidden;
-    min-height: 600px;
-    background:
-      linear-gradient(160deg, rgba(18, 24, 34, 0.98), rgba(22, 29, 41, 0.88)),
-      var(--surface);
-  }
-
-  .hero-card-label,
-  .social-label,
-  .project-meta {
+  .social-label {
     color: var(--surface-muted);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 0.8rem;
   }
 
-  .hero-orbit {
-    position: absolute;
-    inset: auto -1.5rem 1rem auto;
-    width: 16rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 1px dashed rgba(255, 255, 255, 0.14);
-  }
-
-  .hero-orbit span {
-    position: absolute;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), var(--highlight));
-    opacity: 0.82;
-    animation: float 8s ease-in-out infinite;
-  }
-
-  .hero-orbit span:nth-child(1) {
-    width: 1rem;
-    height: 1rem;
-    top: 14%;
-    left: 22%;
-  }
-
-  .hero-orbit span:nth-child(2) {
-    width: 1.3rem;
-    height: 1.3rem;
-    top: 58%;
-    left: 72%;
-    animation-delay: 1.2s;
-  }
-
-  .hero-orbit span:nth-child(3) {
-    width: 2.2rem;
-    height: 2.2rem;
-    top: 72%;
-    left: 18%;
-    animation-delay: 2.2s;
-  }
-
-  .hero-card-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.8rem;
-    margin-top: 3.2rem;
-  }
-
-  .hero-card-grid article,
-  .social-card,
-  .project-card {
+  .social-card {
     border-radius: var(--radius-md);
     border: 1px solid rgba(32, 21, 17, 0.08);
     background: rgba(25, 31, 43, 0.74);
   }
 
-  .hero-card-grid article {
-    display: grid;
-    gap: 0.35rem;
-    padding: 1rem;
-  }
-
-  .hero-card-grid strong {
-    font-size: 2rem;
-    font-family: 'Fraunces', serif;
-  }
-
-  .hero-card-note {
-    position: relative;
-    display: grid;
-    gap: 0.8rem;
-    margin-top: auto;
-  }
-
-  .hero-card-note h2,
   .contact-grid h2,
   .section-heading h2 {
     font-size: clamp(2.1rem, 4vw, 3.7rem);
@@ -422,8 +312,6 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
     letter-spacing: -0.035em;
   }
 
-  .hero-card-note p,
-  .project-card p,
   .contact-grid p,
   .social-card p,
   .about-copy p,
@@ -458,15 +346,13 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
   }
 
   .about-highlights h3,
-  .project-card h3,
   .social-card h3 {
     font-size: 1.5rem;
     line-height: 1.02;
     letter-spacing: -0.025em;
   }
 
-  .about-highlights ul,
-  .tag-list {
+  .about-highlights ul {
     display: flex;
     flex-wrap: wrap;
     gap: 0.7rem;
@@ -475,39 +361,17 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
     list-style: none;
   }
 
-  .about-highlights li,
-  .tag-list li {
+  .about-highlights li {
     padding: 0.75rem 0.9rem;
     border-radius: 999px;
     background: rgba(56, 172, 218, 0.12);
     border: 1px solid rgba(56, 172, 218, 0.18);
   }
 
-  .portfolio-grid,
   .social-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 1.1rem;
-  }
-
-  .project-card {
-    display: grid;
-    gap: 1rem;
-    grid-column: span 4;
-  }
-
-  .project-card.is-featured {
-    grid-column: span 6;
-  }
-
-  .placeholder-link {
-    display: inline-flex;
-    align-items: center;
-    min-height: 3rem;
-    padding: 0.78rem 1.1rem;
-    border-radius: 999px;
-    border: 1px dashed rgba(255, 255, 255, 0.18);
-    color: var(--surface-muted);
   }
 
   .contact-grid {
@@ -553,13 +417,10 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
       grid-template-columns: 1fr;
     }
 
-    .hero-copy,
-    .hero-card {
+    .hero-copy {
       min-height: auto;
     }
 
-    .project-card,
-    .project-card.is-featured,
     .social-card {
       grid-column: span 6;
     }
@@ -595,10 +456,8 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
     }
 
     .hero-copy,
-    .hero-card,
     .about-copy,
     .about-highlights,
-    .project-card,
     .contact-grid,
     .social-card {
       padding: 1.25rem;
@@ -608,20 +467,12 @@ import { about, contact, portfolio, site, socialLinks } from '../data/site';
       font-size: clamp(3rem, 16vw, 4.9rem);
     }
 
-    .hero-card-grid,
-    .portfolio-grid,
     .social-grid {
       grid-template-columns: 1fr;
     }
 
-    .project-card,
-    .project-card.is-featured,
     .social-card {
       grid-column: auto;
-    }
-
-    .hero-card-grid article {
-      min-height: 110px;
     }
 
     .social-card {

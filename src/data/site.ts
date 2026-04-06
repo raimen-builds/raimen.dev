@@ -5,21 +5,6 @@ export type SocialLink = {
   note: string;
 };
 
-export type PortfolioLink = {
-  label: string;
-  href?: string;
-};
-
-export type PortfolioItem = {
-  title: string;
-  role: string;
-  year: string;
-  summary: string;
-  tags: string[];
-  featured: boolean;
-  links: PortfolioLink[];
-};
-
 export const site = {
   name: 'Raimen',
   domain: 'raimen.dev',
@@ -40,7 +25,7 @@ export const site = {
     href: '#socials',
   },
   availability: 'Currently building, experimenting, and documenting the work in public.',
-  seoKeywords: ['Raimen', 'creative developer', 'systems builder', 'interactive design', 'automation', 'portfolio'],
+  seoKeywords: ['Raimen', 'creative developer', 'systems builder', 'interactive design', 'automation'],
 };
 
 export const about = {
@@ -61,47 +46,11 @@ Raimen likes making things that work in the real world and still feel inventive,
   ],
 };
 
-export const portfolio: PortfolioItem[] = [
-  {
-    title: 'raimen.dev',
-    role: 'Personal site design and implementation',
-    year: '2026',
-    summary:
-      'A fast, editorial-style personal site designed to establish a stronger online presence and create a foundation for future case studies, writing, and project storytelling.',
-    tags: ['Astro', 'GitHub Pages', 'Brand Site'],
-    featured: true,
-    links: [
-      { label: 'Live site', href: 'https://raimen.dev' },
-      { label: 'Source', href: 'https://github.com/raimen-ttv/raimen.dev' },
-    ],
-  },
-  {
-    title: 'Selected Client + Creative Work',
-    role: 'Web experiences, visual systems, and custom builds',
-    year: 'Ongoing',
-    summary:
-      'A portfolio category reserved for polished client work, collaborative builds, and projects that deserve deeper case-study treatment as the site expands.',
-    tags: ['Web', 'Creative Direction', 'Case Study'],
-    featured: true,
-    links: [{ label: 'Case study soon' }],
-  },
-  {
-    title: 'Custom Automation + Build Work',
-    role: 'Systems, scripting, hardware integration, and live experiments',
-    year: 'Ongoing',
-    summary:
-      'A running body of work across design systems, front-end builds, creative tooling, experiments, and practical digital problem-solving.',
-    tags: ['Creative Tech', 'Experiments', 'Digital Systems'],
-    featured: false,
-    links: [{ label: 'Get in touch', href: '#contact' }],
-  },
-];
-
 export const socialLinks: SocialLink[] = [
   {
     label: 'GitHub',
-    handle: '@raimen-ttv',
-    href: 'https://github.com/raimen-ttv',
+    handle: '@raimen-builds',
+    href: 'https://github.com/raimen-builds',
     note: 'Code, experiments, tooling, and active build work.',
   },
   {
