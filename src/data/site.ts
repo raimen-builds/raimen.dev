@@ -31,7 +31,7 @@ Some of it ends up as infrastructure, some of it becomes content, and some of it
 export const featuredProject = {
   name: 'Stream Havoc',
   href: 'https://streamhavoc.com',
-  status: 'Projects',
+  status: 'Current Project',
   summary:
     'Stream Havoc is a Twitch Extension and ecosystem of viewer-activated gadgets, allowing for hyper-interactive streams that break the norm of digital-only interactions.',
   body: `The goal is to build stream experiences that move beyond overlays and alerts into real objects, real reactions, and real havoc on camera.`,
