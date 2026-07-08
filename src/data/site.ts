@@ -31,10 +31,10 @@ Some of it ends up as infrastructure, some of it becomes content, and some of it
 export const featuredProject = {
   name: 'Stream Havoc',
   href: 'https://streamhavoc.com',
-  status: 'Current Project',
+  status: 'Projects',
   summary:
-    'Stream Havoc is Raimen’s current build focus: viewer-activated gadgets, live-stream chaos systems, and the infrastructure that makes interactive shows feel physical.',
-  body: `It sits at the intersection of hardware, automation, and performance. The goal is to build stream experiences that move beyond overlays and alerts into real objects, real reactions, and real little machines on camera.`,
+    'Stream Havoc is a Twitch Extension and ecosystem of viewer-activated gadgets, allowing for hyper-interactive streams that break the norm of digital-only interactions.',
+  body: `The goal is to build stream experiences that move beyond overlays and alerts into real objects, real reactions, and real havoc on camera.`,
 };
 
 export const socialLinks: SocialLink[] = [
