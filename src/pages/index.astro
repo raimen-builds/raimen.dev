@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { about, site, socialLinks } from '../data/site';
+import { about, featuredProject, site, socialLinks } from '../data/site';
 ---
 
 <Layout title={site.title} description={site.description} url={site.url}>
@@ -15,6 +15,7 @@ import { about, site, socialLinks } from '../data/site';
       </a>
       <nav aria-label="Section navigation">
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="#socials">Socials</a>
       </nav>
     </div>
@@ -43,6 +44,30 @@ import { about, site, socialLinks } from '../data/site';
             {about.body.split('\n\n').map((paragraph) => <p set:html={paragraph}></p>)}
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Current Project</span>
+          <h2>Building Stream Havoc into interactive hardware chaos.</h2>
+        </div>
+
+        <article class="panel project-card reveal">
+          <div class="project-copy">
+            <span class="project-status">{featuredProject.status}</span>
+            <h3>{featuredProject.name}</h3>
+            <p class="lead">{featuredProject.summary}</p>
+            <p>{featuredProject.body}</p>
+          </div>
+
+          <div class="project-actions">
+            <a class="button button-primary" href={featuredProject.href} target="_blank" rel="noreferrer">
+              Visit streamhavoc.com
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -355,9 +380,53 @@ import { about, site, socialLinks } from '../data/site';
     gap: 1.5rem;
   }
 
+  .project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.6rem;
+  }
+
   .about-copy {
     display: grid;
     gap: 1rem;
+  }
+
+  .project-copy,
+  .project-actions {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .project-status {
+    display: inline-flex;
+    align-items: center;
+    justify-self: start;
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgba(56, 172, 218, 0.28);
+    background: rgba(56, 172, 218, 0.12);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .project-copy h3 {
+    font-family: 'Magistral', 'Space Grotesk', sans-serif;
+    font-size: clamp(1.9rem, 3vw, 3rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+
+  .project-copy p {
+    color: var(--surface-muted);
+  }
+
+  .project-actions {
+    justify-items: start;
   }
 
   .lead {
@@ -415,7 +484,8 @@ import { about, site, socialLinks } from '../data/site';
 
   @media (max-width: 1024px) {
     .about-grid,
-    .contact-grid {
+    .contact-grid,
+    .project-card {
       grid-template-columns: 1fr;
     }
 
@@ -452,7 +522,8 @@ import { about, site, socialLinks } from '../data/site';
 
     .hero-copy,
     .about-copy,
-    .contact-grid {
+    .contact-grid,
+    .project-card {
       padding: 1.25rem;
     }
 

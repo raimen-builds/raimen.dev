@@ -28,6 +28,15 @@ On Twitch, Raimen streams funducational content in the realm of microelectronics
 Some of it ends up as infrastructure, some of it becomes content, and some of it turns into strange little machines.`,
 };
 
+export const featuredProject = {
+  name: 'Stream Havoc',
+  href: 'https://streamhavoc.com',
+  status: 'Current Project',
+  summary:
+    'Stream Havoc is Raimen’s current build focus: viewer-activated gadgets, live-stream chaos systems, and the infrastructure that makes interactive shows feel physical.',
+  body: `It sits at the intersection of hardware, automation, and performance. The goal is to build stream experiences that move beyond overlays and alerts into real objects, real reactions, and real little machines on camera.`,
+};
+
 export const socialLinks: SocialLink[] = [
   {
     label: 'GitHub',
@@ -70,4 +79,3 @@ export const socialLinks: SocialLink[] = [
     href: 'mailto:hello@raimen.dev',
   },
 ];
-
